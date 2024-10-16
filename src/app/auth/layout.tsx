@@ -1,11 +1,12 @@
 import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
 import { redirect } from "next/navigation";
+import { ReactNode } from "react";
 
 export default async function AuthLayout({
   children,
 }: {
-  children: Readonly<React.ReactNode>;
+  children: Readonly<ReactNode>;
 }) {
   const user = await currentUser();
 

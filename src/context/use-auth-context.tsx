@@ -1,13 +1,16 @@
+"use client";
+
 import {
   createContext,
   Dispatch,
+  ReactNode,
   SetStateAction,
   useContext,
   useState,
 } from "react";
 
 type Props = {
-  children: Readonly<React.ReactNode>;
+  children: Readonly<ReactNode>;
 };
 
 type InitialValuesProps = {
